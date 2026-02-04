@@ -1,0 +1,204 @@
+CAR-NK Workflow (Multi-omics → CAR-NK)
+
+Step 1️⃣ Tumor Antigen Discovery (Multi-omics)
+1.1 WGS / WES (tumor–normal)
+
+Purpose
+
+Genetic stability of candidate antigen genes
+
+Detect:
+
+Copy-number loss (antigen escape risk)
+
+Truncating mutations
+
+Tumor-specific amplification
+
+Safety: avoid germline-expressed or essential genes
+
+Key difference vs CAR-T
+
+CAR-NK programs accept slightly lower tumor specificity because NK cells are safer (less CRS, no GvHD)
+
+1.2 Bulk RNA-seq
+
+Purpose
+
+Confirm antigen is:
+
+Highly expressed in tumor
+
+Low or absent in essential normal tissues
+
+Tumor vs normal comparison
+
+1.3 Single-cell RNA-seq
+
+Purpose
+
+Validate:
+
+Expression across tumor subclones
+
+Avoid expression in critical normal cell populations
+
+Identify tumor–immune ecosystem
+
+1.4 Proteomics / Surfaceome (critical)
+
+Purpose
+
+Confirm antigen is:
+
+On the cell surface
+
+Accessible to CAR binding
+
+Common methods:
+
+Cell surface biotinylation
+
+Mass-spec surfaceome profiling
+
+Flow cytometry validation
+
+🔑 For CAR-NK, surface density matters more than absolute specificity
+
+Step 2️⃣ NK-Relevant Antigen Prioritization (CAR-NK Specific)
+
+CAR-NK can leverage NK innate biology, not just CAR binding.
+
+Additional filters:
+
+Antigens associated with:
+
+Stress ligands
+
+Tumor metabolic dysregulation
+
+Antibody-dependent cellular cytotoxicity (ADCC)
+
+Expression correlated with:
+
+Low MHC-I (NK sensitivity)
+
+Interferon stress signatures
+
+Step 3️⃣ Antibody Discovery (BCR-seq / scBCR)
+3.1 Bulk BCR-seq
+
+Purpose
+
+Identify antibodies recognizing:
+
+Tumor antigens
+
+Stress-induced surface proteins
+
+3.2 scBCR + scRNA-seq
+
+Purpose
+
+Pair:
+
+Antibody sequence (BCR)
+
+B-cell activation phenotype
+
+Select:
+
+High-affinity, naturally selected antibodies
+
+Output
+
+scFv sequences for CAR design
+
+Step 4️⃣ CAR Design (NK-Optimized)
+CAR-NK ≠ CAR-T
+Component	CAR-T	CAR-NK
+scFv	Same	Same
+Hinge	CD8α	Often shorter
+Transmembrane	CD28	NKG2D / CD16
+Signaling domain	CD3ζ + CD28 / 4-1BB	DAP10 / DAP12 + CD3ζ
+
+Key NK signaling adaptors
+
+DAP10
+
+DAP12
+
+FcεRIγ
+
+Step 5️⃣ NK Cell Source Selection (Critical Difference)
+Common CAR-NK sources:
+
+NK-92 cell line
+
+Off-the-shelf
+
+Irradiated before infusion
+
+Cord blood NK cells
+
+High proliferative capacity
+
+iPSC-derived NK cells
+
+Best for scalability
+
+Peripheral blood NK cells
+
+🔑 CAR-NK enables allogeneic “off-the-shelf” therapy, unlike CAR-T
+
+Step 6️⃣ Functional Validation (Multi-omics Feedback Loop)
+6.1 In vitro killing assays
+
+Tumor vs normal cells
+
+Cytotoxicity without cytokine storm
+
+6.2 Single-cell profiling (scRNA-seq)
+
+Validate:
+
+NK activation states
+
+Exhaustion markers
+
+Cytokine profiles
+
+6.3 scCAR-seq (optional)
+
+CAR expression heterogeneity
+
+Clonal expansion
+
+Step 7️⃣ Safety & Efficacy Profiling
+Safety
+
+Lower CRS risk
+
+No GvHD
+
+Shorter persistence → safer
+
+Efficacy trade-off
+
+Less persistence than CAR-T
+
+Often combined with:
+
+IL-15 engineering
+
+Checkpoint blockade
+
+Combination therapy
+
+Step 8️⃣ Manufacturing & Clinical Translation
+
+GMP CAR insertion (viral or transposon)
+
+Cryopreservation
+
+Off-the-shelf deployment
