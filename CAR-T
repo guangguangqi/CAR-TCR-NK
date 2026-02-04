@@ -1,0 +1,162 @@
+CAR-T Discovery and Design Pipeline
+(What each omics layer is used for, and why)
+1️⃣ WES / WGS – Genetic stability and safety constraints
+
+Purpose:
+To determine whether a candidate antigen is genetically stable and safe to target.
+
+What we evaluate:
+
+Loss-of-function or truncating mutations in the antigen gene
+
+Copy-number loss or subclonal deletions
+
+Genomic instability that could lead to antigen escape
+
+Why it matters for CAR-T:
+
+CAR-T requires persistent surface antigen expression
+
+If tumor cells can lose the antigen genetically, the therapy will fail
+
+Decision enabled:
+
+Is this antigen genetically reliable across patients and tumor subclones?
+
+2️⃣ Bulk RNA-seq – Tumor-selective expression and mechanism
+
+Purpose:
+To confirm that the antigen is highly expressed in tumor tissue and low or absent in critical normal tissues.
+
+What we evaluate:
+
+Tumor vs normal differential expression
+
+Expression across disease subtypes
+
+Pathway context (oncogenic dependency vs passenger expression)
+
+Why it matters for CAR-T:
+
+High expression increases killing efficiency
+
+Low normal-tissue expression reduces on-target/off-tumor toxicity
+
+Decision enabled:
+
+Is the antigen sufficiently tumor-selective at the transcript level?
+
+3️⃣ Single-cell RNA-seq – Cell-type specificity and heterogeneity
+
+Purpose:
+To assess which cell types actually express the antigen and whether expression is heterogeneous.
+
+What we evaluate:
+
+Expression in malignant vs immune vs stromal cells
+
+Fraction of tumor cells expressing the antigen
+
+Presence of antigen-negative tumor subpopulations
+
+Why it matters for CAR-T:
+
+Antigen heterogeneity → escape risk
+
+Expression on immune or stromal cells → safety risk
+
+Decision enabled:
+
+Is antigen expression confined to tumor cells and sufficiently uniform?
+
+4️⃣ Proteomics / Surfaceome – Physical accessibility to CAR
+
+Purpose:
+To confirm that the antigen is present on the cell surface and accessible to antibody binding.
+
+What we evaluate:
+
+Protein-level expression
+
+Surface localization and extracellular domains
+
+Discrepancies between RNA and protein
+
+Why it matters for CAR-T:
+
+CARs recognize surface proteins only
+
+RNA expression does not guarantee surface availability
+
+Decision enabled:
+
+Is the antigen physically targetable by a CAR?
+
+5️⃣ Bulk BCR-seq – Antibody repertoire discovery
+
+Purpose:
+To identify expanded B-cell clonotypes that may encode antibodies recognizing the tumor antigen.
+
+What we evaluate:
+
+Expanded BCR clonotypes
+
+V(D)J usage and CDR3 diversity
+
+Evidence of antigen-driven selection
+
+Why it matters for CAR-T:
+
+BCRs provide natural antibody sequences
+
+These antibodies can be converted into CAR recognition domains
+
+Decision enabled:
+
+Which antibody lineages are worth pursuing for CAR design?
+
+6️⃣ scBCR + scRNA-seq – Functional validation and chain pairing
+
+Purpose:
+To link antibody sequence with B-cell functional state at single-cell resolution.
+
+What we evaluate:
+
+Correct heavy/light chain pairing
+
+Memory or plasma-cell phenotypes
+
+Somatic hypermutation and affinity maturation
+
+Why it matters for CAR-T:
+
+Correct chain pairing is essential for binding
+
+Antigen-experienced B cells yield higher-quality antibodies
+
+Decision enabled:
+
+Which antibody sequences are functional and engineerable?
+
+7️⃣ scFv Design – CAR recognition module engineering
+
+Purpose:
+To convert antibody variable regions into a stable, functional CAR binding domain.
+
+What we evaluate:
+
+VH/VL orientation
+
+Linker length and flexibility
+
+Stability, aggregation risk, and expression
+
+Why it matters for CAR-T:
+
+Poor scFv design leads to tonic signaling or CAR instability
+
+This step bridges computation and protein engineering
+
+Decision enabled:
+
+Which antibody sequence becomes the CAR targeting domain?
