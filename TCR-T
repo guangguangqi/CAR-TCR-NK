@@ -1,0 +1,166 @@
+TCR-T Discovery and Engineering Pipeline
+
+Core principle:
+TCR-T targets peptide–HLA complexes, not surface proteins.
+Therefore, the pipeline is centered on antigen presentation, HLA restriction, and T-cell functionality.
+
+1️⃣ WES / WGS — Neoantigen definition and genetic stability
+
+Purpose:
+To define tumor-specific antigens and assess their genetic robustness.
+
+What we evaluate:
+
+Somatic mutations generating candidate neoantigens
+
+Truncating mutations or loss of the source gene
+
+Copy-number loss or LOH affecting antigen genes
+
+HLA genotype and LOH at HLA loci
+
+Why it matters for TCR-T:
+
+TCRs recognize mutant peptides presented by HLA
+
+Genetic instability or HLA loss leads to immune escape
+
+Decision enabled:
+
+Is this antigen genetically stable and presented in an HLA-competent context?
+
+2️⃣ Bulk RNA-seq — Antigen expression and pathway context
+
+Purpose:
+To confirm that the neoantigen-encoding gene is transcriptionally expressed in tumor cells.
+
+What we evaluate:
+
+Expression of mutant vs wild-type alleles
+
+Tumor-specific expression patterns
+
+Pathway dependency (driver vs passenger mutation)
+
+Why it matters for TCR-T:
+
+No expression → no peptide → no TCR recognition
+
+Expression consistency improves therapeutic durability
+
+Decision enabled:
+
+Is the antigen actually expressed at a level sufficient for presentation?
+
+3️⃣ (Optional) Immunopeptidomics / In silico MHC binding
+
+Purpose:
+To assess whether candidate peptides are likely to be presented on HLA molecules.
+
+What we evaluate:
+
+Predicted MHC binding affinity
+
+Peptide processing likelihood
+
+(If available) direct MS evidence of presentation
+
+Why it matters for TCR-T:
+
+Not all mutations generate presented peptides
+
+Presentation is the key bottleneck in TCR-T
+
+Decision enabled:
+
+Is this peptide likely to appear on the tumor cell surface as peptide–HLA?
+
+4️⃣ Bulk TCR-seq — Clonotype discovery and immune selection
+
+Purpose:
+To identify expanded TCR clonotypes that may recognize tumor antigens.
+
+What we evaluate:
+
+Clonal expansion in tumor or peripheral blood
+
+V(D)J usage and CDR3 sequences
+
+Repertoire skewing and convergence
+
+Why it matters for TCR-T:
+
+Expanded clonotypes suggest antigen-driven selection
+
+Provides candidate TCR sequences for downstream validation
+
+Decision enabled:
+
+Which TCR clonotypes are likely tumor-reactive?
+
+5️⃣ scTCR + scRNA-seq — Functional validation of TCRs
+
+Purpose:
+To link TCR sequence with T-cell functional state at single-cell resolution.
+
+What we evaluate:
+
+Cytotoxic vs exhausted vs bystander phenotypes
+
+Activation markers and effector gene programs
+
+Clonotype-specific functional profiles
+
+Why it matters for TCR-T:
+
+Expanded ≠ functional
+
+Only cytotoxic, tumor-reactive T cells are suitable for engineering
+
+Decision enabled:
+
+Which TCRs are both antigen-specific and functionally competent?
+
+6️⃣ TCR α/β pairing and sequence selection
+
+Purpose:
+To define the exact α/β TCR pair for engineering.
+
+What we evaluate:
+
+Correct chain pairing
+
+Sequence features linked to specificity or cross-reactivity
+
+Developability and manufacturability risks
+
+Why it matters for TCR-T:
+
+Incorrect pairing alters specificity
+
+Cross-reactivity is a major safety concern
+
+Decision enabled:
+
+Which TCR sequence is safe and suitable for engineering?
+
+7️⃣ TCR engineering and vector design — Transition to development
+
+Purpose:
+To optimize the TCR for expression, stability, and safety.
+
+What we evaluate:
+
+Affinity tuning (avoid supra-physiological binding)
+
+Mispairing prevention strategies
+
+Vector expression and signaling behavior
+
+Why it matters for TCR-T:
+
+Over-affinity increases off-target toxicity
+
+Engineering quality directly impacts clinical safety
+
+Decision enabled:
