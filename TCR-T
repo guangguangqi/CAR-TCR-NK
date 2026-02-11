@@ -1,10 +1,18 @@
 TCR-T Discovery and Engineering Pipeline
+#1 WES / WGS — Neoantigen definition and genetic stability
+##2 Bulk RNA-seq — Antigen expression and pathway context
+###3 (Optional) Immunopeptidomics / In silico MHC binding
+####4 Bulk TCR-seq — Clonotype discovery and immune selection
+#####5 scTCR + scRNA-seq — Functional validation of TCRs
+######6 TCR α/β pairing and sequence selection
+#######7 TCR engineering and vector design — Transition to development
 
 Core principle:
 TCR-T targets peptide–HLA complexes, not surface proteins.
 Therefore, the pipeline is centered on antigen presentation, HLA restriction, and T-cell functionality.
 
-1️⃣ WES / WGS — Neoantigen definition and genetic stability
+##############
+#1 WES / WGS — Neoantigen definition and genetic stability
 
 Purpose:
 To define tumor-specific antigens and assess their genetic robustness.
@@ -29,7 +37,8 @@ Decision enabled:
 
 Is this antigen genetically stable and presented in an HLA-competent context?
 
-2️⃣ Bulk RNA-seq — Antigen expression and pathway context
+##############
+##2 Bulk RNA-seq — Antigen expression and pathway context
 
 Purpose:
 To confirm that the neoantigen-encoding gene is transcriptionally expressed in tumor cells.
@@ -52,7 +61,8 @@ Decision enabled:
 
 Is the antigen actually expressed at a level sufficient for presentation?
 
-3️⃣ (Optional) Immunopeptidomics / In silico MHC binding
+##############
+###3 (Optional) Immunopeptidomics / In silico MHC binding
 
 Purpose:
 To assess whether candidate peptides are likely to be presented on HLA molecules.
@@ -75,7 +85,8 @@ Decision enabled:
 
 Is this peptide likely to appear on the tumor cell surface as peptide–HLA?
 
-4️⃣ Bulk TCR-seq — Clonotype discovery and immune selection
+##############
+####4 Bulk TCR-seq — Clonotype discovery and immune selection
 
 Purpose:
 To identify expanded TCR clonotypes that may recognize tumor antigens.
@@ -98,7 +109,8 @@ Decision enabled:
 
 Which TCR clonotypes are likely tumor-reactive?
 
-5️⃣ scTCR + scRNA-seq — Functional validation of TCRs
+##############
+#####5 scTCR + scRNA-seq — Functional validation of TCRs
 
 Purpose:
 To link TCR sequence with T-cell functional state at single-cell resolution.
@@ -121,7 +133,8 @@ Decision enabled:
 
 Which TCRs are both antigen-specific and functionally competent?
 
-6️⃣ TCR α/β pairing and sequence selection
+##############
+######6 TCR α/β pairing and sequence selection
 
 Purpose:
 To define the exact α/β TCR pair for engineering.
@@ -144,7 +157,8 @@ Decision enabled:
 
 Which TCR sequence is safe and suitable for engineering?
 
-7️⃣ TCR engineering and vector design — Transition to development
+##############
+#######7 TCR engineering and vector design — Transition to development
 
 Purpose:
 To optimize the TCR for expression, stability, and safety.
