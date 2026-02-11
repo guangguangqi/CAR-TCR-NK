@@ -1,6 +1,15 @@
 CAR-T Discovery and Design Pipeline
-(What each omics layer is used for, and why)
-1️⃣ WES / WGS – Genetic stability and safety constraints
+#1  WES / WGS – Genetic stability and safety constraints
+##2 Bulk RNA-seq – Tumor-selective expression and mechanism
+###3 Single-cell RNA-seq – Cell-type specificity and heterogeneity
+####4 Proteomics / Surfaceome – Physical accessibility to CAR
+#####5 Bulk BCR-seq – Antibody repertoire discovery
+######6 scBCR + scRNA-seq – Functional validation and chain pairing
+#######7 scFv Design – CAR recognition module engineering
+
+###################################
+#############
+####1  WES / WGS – Genetic stability and safety constraints
 
 Purpose:
 To determine whether a candidate antigen is genetically stable and safe to target.
@@ -23,7 +32,8 @@ Decision enabled:
 
 Is this antigen genetically reliable across patients and tumor subclones?
 
-2️⃣ Bulk RNA-seq – Tumor-selective expression and mechanism
+##############
+###2 Bulk RNA-seq – Tumor-selective expression and mechanism
 
 Purpose:
 To confirm that the antigen is highly expressed in tumor tissue and low or absent in critical normal tissues.
@@ -46,7 +56,8 @@ Decision enabled:
 
 Is the antigen sufficiently tumor-selective at the transcript level?
 
-3️⃣ Single-cell RNA-seq – Cell-type specificity and heterogeneity
+##################
+#####3 Single-cell RNA-seq – Cell-type specificity and heterogeneity
 
 Purpose:
 To assess which cell types actually express the antigen and whether expression is heterogeneous.
@@ -69,7 +80,8 @@ Decision enabled:
 
 Is antigen expression confined to tumor cells and sufficiently uniform?
 
-4️⃣ Proteomics / Surfaceome – Physical accessibility to CAR
+################
+######4 Proteomics / Surfaceome – Physical accessibility to CAR
 
 Purpose:
 To confirm that the antigen is present on the cell surface and accessible to antibody binding.
@@ -92,7 +104,8 @@ Decision enabled:
 
 Is the antigen physically targetable by a CAR?
 
-5️⃣ Bulk BCR-seq – Antibody repertoire discovery
+####################
+######5 Bulk BCR-seq – Antibody repertoire discovery
 
 Purpose:
 To identify expanded B-cell clonotypes that may encode antibodies recognizing the tumor antigen.
@@ -115,7 +128,8 @@ Decision enabled:
 
 Which antibody lineages are worth pursuing for CAR design?
 
-6️⃣ scBCR + scRNA-seq – Functional validation and chain pairing
+#######################
+########6 scBCR + scRNA-seq – Functional validation and chain pairing
 
 Purpose:
 To link antibody sequence with B-cell functional state at single-cell resolution.
@@ -138,7 +152,8 @@ Decision enabled:
 
 Which antibody sequences are functional and engineerable?
 
-7️⃣ scFv Design – CAR recognition module engineering
+#########################
+####7 scFv Design – CAR recognition module engineering
 
 Purpose:
 To convert antibody variable regions into a stable, functional CAR binding domain.
