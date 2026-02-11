@@ -1,6 +1,24 @@
 CAR-NK Workflow (Multi-omics → CAR-NK)
+#1 Tumor Antigen Discovery (Multi-omics)
+ 1.1 WGS / WES (tumor–normal)
+ 1.2 Bulk RNA-seq
+ 1.3 Single-cell RNA-seq
+ 1.4 Proteomics / Surfaceome 
+##2 NK-Relevant Antigen Prioritization (CAR-NK Specific)
+###3 Antibody Discovery (BCR-seq / scBCR)
+   3.1 Bulk BCR-seq
+   3.2 scBCR + scRNA-seq
+####4 CAR Design (NK-Optimized)
+#####5 NK Cell Source Selection (Critical Difference)
+######6 Functional Validation (Multi-omics Feedback Loop)
+      6.1 In vitro killing assays
+      6.2 Single-cell profiling (scRNA-seq)
+      6.3 scCAR-seq (optional)
 
-Step 1️⃣ Tumor Antigen Discovery (Multi-omics)
+
+
+##########
+#1 Tumor Antigen Discovery (Multi-omics)
 1.1 WGS / WES (tumor–normal)
 
 Purpose
@@ -65,7 +83,8 @@ Flow cytometry validation
 
 🔑 For CAR-NK, surface density matters more than absolute specificity
 
-Step 2️⃣ NK-Relevant Antigen Prioritization (CAR-NK Specific)
+##########
+##2 NK-Relevant Antigen Prioritization (CAR-NK Specific)
 
 CAR-NK can leverage NK innate biology, not just CAR binding.
 
@@ -85,7 +104,8 @@ Low MHC-I (NK sensitivity)
 
 Interferon stress signatures
 
-Step 3️⃣ Antibody Discovery (BCR-seq / scBCR)
+##########
+###3 Antibody Discovery (BCR-seq / scBCR)
 3.1 Bulk BCR-seq
 
 Purpose
@@ -114,7 +134,8 @@ Output
 
 scFv sequences for CAR design
 
-Step 4️⃣ CAR Design (NK-Optimized)
+##########
+####4 CAR Design (NK-Optimized)
 CAR-NK ≠ CAR-T
 Component	CAR-T	CAR-NK
 scFv	Same	Same
@@ -130,7 +151,8 @@ DAP12
 
 FcεRIγ
 
-Step 5️⃣ NK Cell Source Selection (Critical Difference)
+##########
+#####5 NK Cell Source Selection (Critical Difference)
 Common CAR-NK sources:
 
 NK-92 cell line
@@ -151,7 +173,8 @@ Peripheral blood NK cells
 
 🔑 CAR-NK enables allogeneic “off-the-shelf” therapy, unlike CAR-T
 
-Step 6️⃣ Functional Validation (Multi-omics Feedback Loop)
+##########
+#######6 Functional Validation (Multi-omics Feedback Loop)
 6.1 In vitro killing assays
 
 Tumor vs normal cells
@@ -174,7 +197,8 @@ CAR expression heterogeneity
 
 Clonal expansion
 
-Step 7️⃣ Safety & Efficacy Profiling
+##########
+########7 Safety & Efficacy Profiling
 Safety
 
 Lower CRS risk
@@ -195,7 +219,8 @@ Checkpoint blockade
 
 Combination therapy
 
-Step 8️⃣ Manufacturing & Clinical Translation
+##########
+##########8 Manufacturing & Clinical Translation
 
 GMP CAR insertion (viral or transposon)
 
