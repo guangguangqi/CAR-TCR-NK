@@ -31,6 +31,26 @@ If tumor cells can lose the antigen genetically, the therapy will fail
 Decision enabled:
 
 Is this antigen genetically reliable across patients and tumor subclones?
+WES/WGS —— 遗传稳定性和安全性考量
+
+目的：
+评估候选抗原是否具有遗传稳定性，以及将其作为靶点是否安全。
+
+评估内容：
+
+抗原基因中的功能缺失突变或截短突变
+
+拷贝数丢失或亚克隆缺失
+
+可能导致抗原逃逸的基因组不稳定性
+
+对 CAR-T 疗法的重要性：
+
+CAR-T 疗法依赖于抗原在细胞表面的持续表达
+
+若肿瘤细胞发生抗原基因丢失，治疗将会失败
+
+
 
 ##############
 ###2 Bulk RNA-seq – Tumor-selective expression and mechanism
@@ -80,6 +100,26 @@ Decision enabled:
 
 Is antigen expression confined to tumor cells and sufficiently uniform?
 
+确认该抗原在肿瘤组织中呈高表达，而在关键正常组织中呈低表达或不表达。
+
+评估内容：
+
+肿瘤与正常组织间的差异表达
+
+不同疾病亚型中的表达情况
+
+通路背景（致癌依赖性与“乘客”表达）
+
+对 CAR-T 疗法的重要性：
+
+高表达可提高杀伤效率
+
+正常组织中的低表达可降低“靶向/非肿瘤”（on-target/off-tumor）毒性
+
+支持的决策：
+
+该抗原在转录水平上是否具有足够的肿瘤选择性？
+
 ################
 ######4 Proteomics / Surfaceome – Physical accessibility to CAR
 
@@ -104,6 +144,26 @@ Decision enabled:
 
 Is the antigen physically targetable by a CAR?
 
+目的：
+确认抗原存在于细胞表面，且可供抗体结合。
+
+评估内容：
+
+蛋白水平表达
+
+表面定位及胞外结构域
+
+RNA与蛋白水平的差异
+
+对CAR-T的意义：
+
+CAR仅识别表面蛋白
+
+RNA表达并不保证抗原在细胞表面可被识别
+
+辅助决策：
+
+该抗原是否能被CAR有效靶向？
 ####################
 ######5 Bulk BCR-seq – Antibody repertoire discovery
 
@@ -128,6 +188,27 @@ Decision enabled:
 
 Which antibody lineages are worth pursuing for CAR design?
 
+目的：
+识别可能编码识别肿瘤抗原抗体的扩增B细胞克隆型。
+
+评估内容：
+
+扩增的BCR克隆型
+
+V(D)J基因使用情况与CDR3多样性
+
+抗原驱动选择的证据
+
+对CAR-T的意义：
+
+BCR提供了天然抗体序列
+
+这些抗体可转化为CAR识别结构域
+
+辅助决策：
+
+哪些抗体谱系值得用于CAR设计？
+
 #######################
 ########6 scBCR + scRNA-seq – Functional validation and chain pairing
 
@@ -151,7 +232,28 @@ Antigen-experienced B cells yield higher-quality antibodies
 Decision enabled:
 
 Which antibody sequences are functional and engineerable?
+功能验证与链配对
 
+目的：
+在单细胞分辨率下，将抗体序列与B细胞的功能状态相关联。
+
+评估内容：
+
+重链/轻链的正确配对
+
+记忆B细胞或浆细胞表型
+
+体细胞高频突变与亲和力成熟
+
+对CAR-T的意义：
+
+正确的链配对是实现结合的关键
+
+经历过抗原刺激的B细胞能产生更高质量的抗体
+
+支持的决策：
+
+哪些抗体序列具有功能性且适合进行工程化改造？
 #########################
 ####7 scFv Design – CAR recognition module engineering
 
@@ -175,3 +277,28 @@ This step bridges computation and protein engineering
 Decision enabled:
 
 Which antibody sequence becomes the CAR targeting domain?
+
+CAR识别模块工程
+
+目的：
+将抗体可变区转化为稳定且具有功能的CAR结合结构域。
+
+评估内容：
+
+VH/VL的排列方向
+
+连接肽（Linker）的长度与柔性
+
+稳定性、聚集风险及表达水平
+
+对CAR-T的重要性：
+
+scFv设计不当会导致基础信号传导（tonic signaling）或CAR不稳定
+
+该步骤连接了计算分析与蛋白质工程
+
+决策结果：
+
+确定哪种抗体序列作为CAR的靶向结合结构域
+
+
